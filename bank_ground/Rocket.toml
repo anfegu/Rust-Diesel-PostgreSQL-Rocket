@@ -1,0 +1,2 @@
+[global.databases]
+db_bankbase = {url = "postgres://postgres:1nv1t4d0@localhost/db_bank"}

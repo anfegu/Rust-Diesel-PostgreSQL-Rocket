@@ -1,0 +1,21 @@
+[package]
+name = "bank_ground"
+version = "0.1.0"
+authors = ["Felipe<anfegu86@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.2"
+failure = "0.1.5"
+failure_derive = "0.1.5"
+db_bank = {path="../db_bank/"}
+diesel = { version = "1.4.4", features = ["postgres"] }
+rand = "0.7.0"
+maud = { version="0.21.0", features = ["rocket"] }
+
+[dependencies.rocket_contrib]
+version = "0.4.2"
+default-features = false
+features = ["diesel_postgres_pool"]
